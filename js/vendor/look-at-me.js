@@ -1,6 +1,10 @@
 +function () {
     // Traer los elementos que se necesitan del HTML
-   
+   var botonAgregar = document.getElementById("agregar");
+   var botonMostrar = document.getElementById("mostrar");
+   var botonBuscar = document.getElementById("buscar");
+   var botonTopTecnico = document.getElementById("top-tecnico");
+   var botonTopHse = document.getElementById("top-hse");
     
     // Evento Click - Agregar
     var eventoAgregar = function (e) {
@@ -38,5 +42,10 @@
     };
     
     // Agregar eventos que correspondan
-    
+        botonAgregar.addEventListener("click", eventoAgregar);
+        botonMostrar.addEventListener("click", eventoMostrar);
+        botonBuscar.addEventListener("click", eventoBuscar);
+        botonTopTecnico.addEventListener("click", eventoTopTecnico);
+        botonTopHse.addEventListener("click", eventoTopHse);
+        
 }();
